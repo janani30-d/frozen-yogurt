@@ -28913,3 +28913,73 @@ body.rtl .scroll-top-btn {
     }
 
 }
+
+
+
+/* =========================================================
+   FRANCHISE HERO — CENTER CONTENT + BUTTONS
+========================================================= */
+
+.fr-hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.fr-hero-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.fr-hero-content h1,
+.fr-hero-content p,
+.fr-hero-label {
+    text-align: center;
+}
+
+.fr-hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+
+
+
+
+/* =========================================================
+   LOCATION HERO — CENTER CONTENT + BUTTONS
+========================================================= */
+
+.loc-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.loc-hero-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.loc-hero-content h1,
+.loc-hero-content p,
+.loc-hero-label {
+    text-align: center;
+}
+
+.loc-hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
