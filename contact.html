@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Froyo Bliss | Frozen Yogurt Shop</title>
+
+  <!-- Favicon -->
+
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Google Fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     FROZEN YOGURT SHOP
+     HEADER START
+========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="header-container">
+
+        <!-- =================================================
+             LOGO
+        ================================================== -->
+
+        <a
+            href="index.html"
+            class="site-logo"
+            aria-label="Frozen Yogurt Shop Home"
+        >
+
+            <img
+                src="images/logo.png"
+                alt="Frozen Yogurt Shop Logo"
+            >
+
+        </a>
+
+
+        <!-- =================================================
+             MAIN NAVIGATION
+        ================================================== -->
+
+        <nav
+            class="main-nav"
+            id="mainNav"
+            aria-label="Main Navigation"
+        >
+
+            <!-- =============================================
+                 HOME DROPDOWN
+            ============================================== -->
+
+            <div class="nav-dropdown">
+
+                <button
+                    type="button"
+                    class="nav-dropdown-toggle"
+                    aria-expanded="false"
+                    aria-haspopup="true"
+                >
+
+                    <span>Home</span>
+
+                    <i
+                        class="fa-solid fa-chevron-down"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <div class="nav-dropdown-menu">
+
+                    <a href="index.html">
+                        Home 1
+                    </a>
+
+                    <a href="home2.html">
+                        Home 2
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- =============================================
+                 ABOUT
+            ============================================== -->
+
+            <a
+                href="about.html"
+                class="nav-link"
+            >
+                About
+            </a>
+
+
+            <!-- =============================================
+                 MENU
+            ============================================== -->
+
+            <a
+                href="menu.html"
+                class="nav-link"
+            >
+                Menu
+            </a>
+
+
+            <!-- =============================================
+                 FRANCHISE
+            ============================================== -->
+
+            <a
+                href="franchise.html"
+                class="nav-link"
+            >
+                Franchise
+            </a>
+
+
+            <!-- =============================================
+                 LOCATIONS
+            ============================================== -->
+
+            <a
+                href="locations.html"
+                class="nav-link"
+            >
+                Locations
+            </a>
+
+
+            <!-- =============================================
+                 CONTACT
+            ============================================== -->
+
+            <a
+                href="contact.html"
+                class="nav-link active"
+            >
+                Contact
+            </a>
+
+
+            <!-- =============================================
+                 HEADER CONTROLS
+            ============================================== -->
+
+            <div class="header-controls">
+
+                <!-- =========================================
+                     RTL BUTTON
+                ========================================== -->
+
+                <button
+                    type="button"
+                    class="header-control-btn rtl-toggle"
+                    id="rtlToggle"
+                    aria-label="Switch to RTL mode"
+                    title="RTL Mode"
+                >
+
+                    <i
+                        class="fa-solid fa-arrow-right-arrow-left"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- =========================================
+                     DARK MODE BUTTON
+                ========================================== -->
+
+                <button
+                    type="button"
+                    class="header-control-btn dark-mode-toggle"
+                    id="darkModeToggle"
+                    aria-label="Enable dark mode"
+                    title="Dark Mode"
+                >
+
+                    <i
+                        class="fa-solid fa-moon"
+                        aria-hidden="true"
+                    ></i>
+
+                </button>
+
+
+                <!-- =========================================
+                     LOGIN BUTTON
+                ========================================== -->
+
+                <a
+                    href="login.html"
+                    class="login-btn"
+                >
+
+                    <i
+                        class="fa-regular fa-user"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        Login
+                    </span>
+
+                </a>
+
+            </div>
+
+        </nav>
+
+
+        <!-- =================================================
+             HAMBURGER BUTTON
+        ================================================== -->
+
+        <button
+            type="button"
+            class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false"
+            aria-controls="mainNav"
+        >
+
+            <i
+                class="fa-solid fa-bars"
+                aria-hidden="true"
+            ></i>
+
+        </button>
+
+    </div>
+
+</header>
+<!-- =====================================================
+     CONTACT PAGE — SECTION 1
+     CONTACT HERO
+===================================================== -->
+
+<section class="contact-hero" id="contactHero">
+
+    <!-- Hero Background -->
+    <div class="contact-hero-background">
+        <img
+            src="images/contact-hero.jpg"
+            alt="Frozen yogurt shop interior"
+            loading="eager"
+        >
+    </div>
+
+    <!-- Dark / Pink Overlay -->
+    <div class="contact-hero-overlay"></div>
+
+    <!-- Hero Content -->
+    <div class="contact-hero-container">
+
+        <div class="contact-hero-content">
+
+            <!-- Eyebrow -->
+            <span class="contact-hero-eyebrow">
+                GET IN TOUCH
+            </span>
+
+            <!-- Heading -->
+            <h1>
+                We'd Love to
+                <span>Hear From You</span>
+            </h1>
+
+            <!-- Description -->
+            <p>
+                Have a question, suggestion, or simply want to say hello?
+                Our team is always happy to help make your frozen yogurt
+                experience even sweeter.
+            </p>
+
+            <!-- Buttons -->
+            <div class="contact-hero-actions">
+
+                <a
+                    href="#contactForm"
+                    class="contact-hero-button contact-hero-button-primary"
+                >
+                    <span>Send Us a Message</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a
+                    href="#contactInfo"
+                    class="contact-hero-button contact-hero-button-secondary"
+                >
+                    <span>Contact Details</span>
+                    <i class="fa-solid fa-phone"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Decorative Shape -->
+    <div class="contact-hero-shape contact-hero-shape-one"></div>
+    <div class="contact-hero-shape contact-hero-shape-two"></div>
+
+</section>
+<!-- =====================================================
+     CONTACT PAGE — SECTION 2
+     CONTACT INFORMATION
+===================================================== -->
+
+<section class="contact-info" id="contactInfo">
+
+    <div class="contact-info-container">
+
+        <!-- =================================================
+             SECTION HEADING
+        ================================================== -->
+
+        <div class="contact-info-heading">
+
+            <span class="contact-info-eyebrow">
+                WE'RE HERE TO HELP
+            </span>
+
+            <h2>
+                Let's Stay
+                <span>Connected</span>
+            </h2>
+
+            <p>
+                Whether you have a question about our stores, menu,
+                events, or simply want to say hello, we're always happy
+                to hear from you.
+            </p>
+
+        </div>
+
+
+        <!-- =================================================
+             CONTACT INFORMATION GRID
+        ================================================== -->
+
+        <div class="contact-info-grid">
+
+
+            <!-- =================================================
+                 CARD 01 — VISIT US
+            ================================================== -->
+
+            <article class="contact-info-card">
+
+                <div class="contact-info-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div class="contact-info-card-content">
+
+                    <span class="contact-info-card-label">
+                        VISIT US
+                    </span>
+
+                    <h3>
+                        Find a Store
+                    </h3>
+
+                    <p>
+                        125 Sweet Street,
+                        Downtown
+                    </p>
+
+                    <a
+                        href="#findStores"
+                        class="contact-info-link"
+                    >
+                        <span>View Locations</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 CARD 02 — CALL US
+            ================================================== -->
+
+            <article class="contact-info-card">
+
+                <div class="contact-info-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="contact-info-card-content">
+
+                    <span class="contact-info-card-label">
+                        CALL US
+                    </span>
+
+                    <h3>
+                        +1 555 201 4500
+                    </h3>
+
+                    <p>
+                        Mon – Sun,
+                        11:00 AM – 10:00 PM
+                    </p>
+
+                    <a
+                        href="tel:+15552014500"
+                        class="contact-info-link"
+                    >
+                        <span>Call Our Team</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 CARD 03 — EMAIL US
+            ================================================== -->
+
+            <article class="contact-info-card">
+
+                <div class="contact-info-icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div class="contact-info-card-content">
+
+                    <span class="contact-info-card-label">
+                        EMAIL US
+                    </span>
+
+                    <h3>
+                        hi@frozenyogurt.com
+                    </h3>
+
+                    <p>
+                        Send us your questions,
+                        ideas, or feedback.
+                    </p>
+
+                    <a
+                        href="mailto:hello@frozenyogurt.com"
+                        class="contact-info-link"
+                    >
+                        <span>Send an Email</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 CARD 04 — OPENING HOURS
+            ================================================== -->
+
+            <article class="contact-info-card">
+
+                <div class="contact-info-icon">
+                    <i class="fa-solid fa-clock"></i>
+                </div>
+
+                <div class="contact-info-card-content">
+
+                    <span class="contact-info-card-label">
+                        OPENING HOURS
+                    </span>
+
+                    <h3>
+                        We're Open Daily
+                    </h3>
+
+                    <p>
+                        Monday – Sunday
+                        <br>
+                        11:00 AM – 10:00 PM
+                    </p>
+
+                    <a
+                        href="#findStores"
+                        class="contact-info-link"
+                    >
+                        <span>Check Store Hours</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     CONTACT PAGE — SECTION 3
+     CONTACT FORM + IMAGE
+===================================================== -->
+
+<section class="contact-form-section" id="contactForm">
+
+    <div class="contact-form-container">
+
+
+        <!-- =================================================
+             LEFT — CONTACT FORM
+        ================================================== -->
+
+        <div class="contact-form-content">
+
+            <span class="contact-form-eyebrow">
+                SEND A MESSAGE
+            </span>
+
+            <h2>
+                Have a Question?
+                <span>Let's Talk</span>
+            </h2>
+
+            <p class="contact-form-intro">
+                Have something you'd like to ask us? Fill out the form
+                below and our friendly team will get back to you as soon
+                as possible.
+            </p>
+
+
+            <!-- =================================================
+                 FORM
+            ================================================== -->
+
+            <form class="contact-form" id="contactMessageForm">
+
+                <!-- Name + Email -->
+                <div class="contact-form-row">
+
+                    <div class="contact-form-group">
+
+                        <label for="contactName">
+                            Full Name
+                        </label>
+
+                        <div class="contact-form-input-wrap">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="contactName"
+                                name="name"
+                                placeholder="Enter your name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-form-group">
+
+                        <label for="contactEmail">
+                            Email Address
+                        </label>
+
+                        <div class="contact-form-input-wrap">
+
+                            <i class="fa-regular fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="contactEmail"
+                                name="email"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Phone + Subject -->
+                <div class="contact-form-row">
+
+                    <div class="contact-form-group">
+
+                        <label for="contactPhone">
+                            Phone Number
+                        </label>
+
+                        <div class="contact-form-input-wrap">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <input
+                                type="tel"
+                                id="contactPhone"
+                                name="phone"
+                                placeholder="Enter your phone number"
+                                autocomplete="tel"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-form-group">
+
+                        <label for="contactSubject">
+                            Subject
+                        </label>
+
+                        <div class="contact-form-input-wrap">
+
+                            <i class="fa-regular fa-comment-dots"></i>
+
+                            <input
+                                type="text"
+                                id="contactSubject"
+                                name="subject"
+                                placeholder="What can we help with?"
+                            >
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Message -->
+                <div class="contact-form-group contact-form-message-group">
+
+                    <label for="contactMessage">
+                        Your Message
+                    </label>
+
+                    <div class="contact-form-input-wrap contact-form-textarea-wrap">
+
+                        <i class="fa-regular fa-message"></i>
+
+                        <textarea
+                            id="contactMessage"
+                            name="message"
+                            rows="5"
+                            placeholder="Tell us how we can help..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Submit -->
+                <button
+                    type="submit"
+                    class="contact-form-submit"
+                >
+                    <span>Send Message</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- =================================================
+             RIGHT — CONTACT VISUAL
+        ================================================== -->
+
+        <div class="contact-form-visual">
+
+            <div class="contact-form-image">
+
+                <img
+                    src="images/contact-form.jpg"
+                    alt="Frozen yogurt shop interior"
+                    loading="lazy"
+                >
+
+            </div>
+
+
+            <!-- Floating Help Card -->
+            <div class="contact-form-help-card">
+
+                <div class="contact-form-help-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+
+                <div class="contact-form-help-content">
+
+                    <span>
+                        NEED HELP?
+                    </span>
+
+                    <strong>
+                        We're Here for You
+                    </strong>
+
+                    <small>
+                        Our friendly team is ready to help.
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- Contact Detail Card -->
+            <div class="contact-form-phone-card">
+
+                <div class="contact-form-phone-icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div class="contact-form-phone-content">
+
+                    <span>
+                        TALK TO US
+                    </span>
+
+                    <strong>
+                        +1 555 201 4500
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================================
+     CONTACT PAGE — SECTION 4
+     FIND OUR STORES
+===================================================== -->
+
+<section class="contact-stores" id="findStores">
+
+    <div class="contact-stores-container">
+
+        <!-- =================================================
+             SECTION TOP
+        ================================================== -->
+
+        <div class="contact-stores-top">
+
+            <div class="contact-stores-heading">
+
+                <span class="contact-stores-eyebrow">
+                    FIND YOUR SWEET SPOT
+                </span>
+
+                <h2>
+                    Visit Our <span>Stores</span>
+                </h2>
+
+                <p>
+                    Drop by your nearest Frozen Yogurt Shop and enjoy
+                    fresh flavors, delicious toppings, and sweet moments.
+                </p>
+
+            </div>
+
+            <a
+                href="#locations"
+                class="contact-stores-all-button"
+            >
+                <span>View All Locations</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+
+        <!-- =================================================
+             STORE GRID
+        ================================================== -->
+
+        <div class="contact-stores-grid">
+
+
+            <!-- =================================================
+                 STORE 01
+            ================================================== -->
+
+            <article class="contact-store-card">
+
+                <span class="contact-store-city">
+                    DOWNTOWN
+                </span>
+
+                <div class="contact-store-icon">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+
+                <div class="contact-store-content">
+
+                    <span class="contact-store-label">
+                        OUR STORE
+                    </span>
+
+                    <h3>
+                        Sweet Street
+                    </h3>
+
+                    <p class="contact-store-address">
+                        125 Sweet Street,
+                        Downtown
+                    </p>
+
+
+                    <div class="contact-store-hours">
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Mon – Fri : 11:00 AM – 10:00 PM</span>
+                        </div>
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Saturday : 11:00 AM – 10:00 PM</span>
+                        </div>
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Sunday : 11:00 AM – 9:00 PM</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-store-actions">
+
+                        <a
+                            href="tel:+15552014500"
+                            class="contact-store-call"
+                        >
+                            <span>Call Store</span>
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-store-directions"
+                        >
+                            <span>Directions</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 STORE 02
+            ================================================== -->
+
+            <article class="contact-store-card">
+
+                <span class="contact-store-city">
+                    RIVERSIDE
+                </span>
+
+                <div class="contact-store-icon">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+
+                <div class="contact-store-content">
+
+                    <span class="contact-store-label">
+                        OUR STORE
+                    </span>
+
+                    <h3>
+                        Berry Corner
+                    </h3>
+
+                    <p class="contact-store-address">
+                        Level 2,
+                        Riverside Mall
+                    </p>
+
+
+                    <div class="contact-store-hours">
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Mon – Fri : 10:00 AM – 10:00 PM</span>
+                        </div>
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Saturday : 10:00 AM – 10:00 PM</span>
+                        </div>
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Sunday : 10:00 AM – 10:00 PM</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-store-actions">
+
+                        <a
+                            href="tel:+15552014520"
+                            class="contact-store-call"
+                        >
+                            <span>Call Store</span>
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-store-directions"
+                        >
+                            <span>Directions</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 STORE 03
+            ================================================== -->
+
+            <article class="contact-store-card">
+
+                <span class="contact-store-city">
+                    GREEN AVENUE
+                </span>
+
+                <div class="contact-store-icon">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+
+                <div class="contact-store-content">
+
+                    <span class="contact-store-label">
+                        OUR STORE
+                    </span>
+
+                    <h3>
+                        Yogurt Garden
+                    </h3>
+
+                    <p class="contact-store-address">
+                        48 Green Avenue,
+                        West District
+                    </p>
+
+
+                    <div class="contact-store-hours">
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Mon – Fri : 11:00 AM – 9:30 PM</span>
+                        </div>
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Saturday : 11:00 AM – 9:30 PM</span>
+                        </div>
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Sunday : 11:00 AM – 9:30 PM</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-store-actions">
+
+                        <a
+                            href="tel:+15552014550"
+                            class="contact-store-call"
+                        >
+                            <span>Call Store</span>
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-store-directions"
+                        >
+                            <span>Directions</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- =================================================
+                 STORE 04
+            ================================================== -->
+
+            <article class="contact-store-card">
+
+                <span class="contact-store-city">
+                    CENTRAL PARK
+                </span>
+
+                <div class="contact-store-icon">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+
+                <div class="contact-store-content">
+
+                    <span class="contact-store-label">
+                        OUR STORE
+                    </span>
+
+                    <h3>
+                        Pink Spoon
+                    </h3>
+
+                    <p class="contact-store-address">
+                        72 Park Avenue,
+                        Central District
+                    </p>
+
+
+                    <div class="contact-store-hours">
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Mon – Fri : 11:00 AM – 10:30 PM</span>
+                        </div>
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Saturday : 11:00 AM – 10:30 PM</span>
+                        </div>
+
+                        <div class="contact-store-hour">
+                            <i class="fa-regular fa-clock"></i>
+                            <span>Sunday : 11:00 AM – 10:30 PM</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="contact-store-actions">
+
+                        <a
+                            href="tel:+15552014580"
+                            class="contact-store-call"
+                        >
+                            <span>Call Store</span>
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+
+                        <a
+                            href="#"
+                            class="contact-store-directions"
+                        >
+                            <span>Directions</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer" id="siteFooter">
+
+    <div class="footer-container">
+
+        <!-- =================================================
+             FOOTER TOP
+        ================================================== -->
+
+        <div class="footer-top">
+
+
+            <!-- BRAND -->
+            <div class="footer-column footer-brand">
+
+                <a href="index.html" class="footer-logo">
+                    <img
+                        src="images/logo.png"
+                        alt="Frozen Yogurt Shop Logo"
+                    >
+                </a>
+
+                <p class="footer-description">
+                    Delicious frozen yogurt made with fresh
+                    ingredients, joyful flavors, and a little
+                    sweetness in every spoonful.
+                </p>
+
+                <!-- SOCIAL LINKS -->
+
+                <div class="footer-social">
+
+                    <a
+                        href="#"
+                        aria-label="Facebook"
+                        title="Facebook"
+                    >
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Instagram"
+                        title="Instagram"
+                    >
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="Twitter"
+                        title="Twitter"
+                    >
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a
+                        href="#"
+                        aria-label="YouTube"
+                        title="YouTube"
+                    >
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- QUICK LINKS -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">
+                    Quick Links
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="menu.html">
+                            Menu
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="franchise.html">
+                            Franchise
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="locations.html">
+                            Locations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- INFORMATION -->
+
+            <div class="footer-column">
+
+                <h3 class="footer-title">
+                    Information
+                </h3>
+
+                <ul class="footer-links">
+
+                    <li>
+                        <a href="#">
+                            Our Story
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Our Flavors
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Franchise With Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Store Locations
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            FAQs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- CONTACT -->
+
+            <div class="footer-column footer-contact">
+
+                <h3 class="footer-title">
+                    Get In Touch
+                </h3>
+
+
+                <div class="footer-contact-item">
+
+                    <span class="footer-contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+
+                    <div>
+                        <strong>Visit Us</strong>
+
+                        <p>
+                            25 Sweet Street,<br>
+                            Chennai, Tamil Nadu
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="footer-contact-item">
+
+                    <span class="footer-contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+
+                    <div>
+                        <strong>Call Us</strong>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <div class="footer-contact-item">
+
+                    <span class="footer-contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+
+                    <div>
+                        <strong>Email Us</strong>
+
+                        <a href="mailto:hello@frozenyogurt.com">
+                            hello@frozenyogurt.com
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             NEWSLETTER
+        ================================================== -->
+
+        <div class="footer-newsletter">
+
+            <div class="newsletter-content">
+
+                <span class="newsletter-icon">
+                    <i class="fa-solid fa-ice-cream"></i>
+                </span>
+
+                <div>
+
+                    <h3>
+                        Stay in the Sweet Loop
+                    </h3>
+
+                    <p>
+                        Get the latest flavors, offers, and
+                        frozen yogurt news.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <form
+                class="newsletter-form"
+                action="#"
+                method="post"
+            >
+
+                <label
+                    for="footerEmail"
+                    class="sr-only"
+                >
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="footerEmail"
+                    name="email"
+                    placeholder="Enter your email address"
+                    required
+                >
+
+                <button
+                    type="submit"
+                    class="newsletter-btn"
+                >
+                    Subscribe
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <!-- =================================================
+             FOOTER BOTTOM
+        ================================================== -->
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Frozen Yogurt Shop.
+                All Rights Reserved.
+            </p>
+
+            <div class="footer-bottom-links">
+
+                <a href="#">
+                    Privacy Policy
+                </a>
+
+                <span>|</span>
+
+                <a href="#">
+                    Terms & Conditions
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</footer>
+
+ <!-- JS -->
+<!-- =========================================================
+     SCROLL TO TOP BUTTON
+========================================================= -->
+
+<button
+    type="button"
+    class="scroll-top-btn"
+    id="scrollTopBtn"
+    aria-label="Scroll to top"
+    title="Back to Top"
+>
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+</button>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
