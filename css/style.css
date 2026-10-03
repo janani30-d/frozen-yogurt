@@ -28856,3 +28856,60 @@ body.rtl .scroll-top-btn {
     }
 
 }
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   ABOUT STORY — MOBILE
+   REDUCE BACKGROUND MINT CIRCLE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .about-story-mint-shape {
+        width: 330px !important;
+        height: 330px !important;
+
+        top: 50% !important;
+        left: 50% !important;
+
+        transform: translate(-50%, -50%) !important;
+
+        border-radius: 50% !important;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .about-story-mint-shape {
+        width: 285px !important;
+        height: 285px !important;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .about-story-mint-shape {
+        width: 250px !important;
+        height: 250px !important;
+    }
+
+}
