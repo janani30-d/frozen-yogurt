@@ -310,13 +310,22 @@
      FIND A STORE
 ========================================================= -->
 
-<section class="loc-find" id="findStore">
+<!-- =========================================================
+     FIND YOUR STORE
+========================================================= -->
 
-    <div class="loc-container">
+<section class="store-search-section" id="findStore">
 
-        <div class="loc-section-heading">
+    <div class="store-search-container">
 
-            <span class="loc-label">
+
+        <!-- =================================================
+             TOP HEADING — OUTSIDE CARD
+        ================================================== -->
+
+        <div class="store-search-heading">
+
+            <span class="store-search-heading-label">
                 FIND YOUR STORE
             </span>
 
@@ -326,20 +335,27 @@
             </h2>
 
             <p>
-                Search for a convenient location and discover the frozen yogurt
-                experience waiting for you.
+                Search for a convenient location and discover the frozen
+                yogurt experience waiting for you.
             </p>
 
         </div>
 
 
-        <div class="loc-find-card">
+        <!-- =================================================
+             SEARCH CARD
+        ================================================== -->
 
-            <!-- LEFT CONTENT -->
+        <div class="store-search-card">
 
-            <div class="loc-find-content">
 
-                <span class="loc-find-eyebrow">
+            <!-- =============================================
+                 LEFT — SEARCH CONTENT
+            ============================================== -->
+
+            <div class="store-search-content">
+
+                <span class="store-search-eyebrow">
                     SEARCH LOCATIONS
                 </span>
 
@@ -348,16 +364,28 @@
                 </h3>
 
                 <p>
-                    Enter your city, area, or ZIP code to discover a nearby
-                    frozen yogurt shop.
+                    Enter your city, area, or ZIP code to discover
+                    a nearby frozen yogurt shop.
                 </p>
 
 
-                <form class="loc-search-form" id="locationSearchForm">
+                <!-- =========================================
+                     SEARCH FORM
+                ========================================== -->
 
-                    <div class="loc-search-input">
+                <form
+                    class="store-search-form"
+                    id="locationSearchForm"
+                >
 
-                        <i class="fa-solid fa-location-dot"></i>
+                    <!-- SEARCH INPUT -->
+
+                    <div class="store-search-input">
+
+                        <i
+                            class="fa-solid fa-location-dot"
+                            aria-hidden="true"
+                        ></i>
 
                         <input
                             type="text"
@@ -369,23 +397,49 @@
 
                     </div>
 
-                    <button type="submit" class="loc-search-button">
-                        <span>Search Locations</span>
-                        <i class="fa-solid fa-arrow-right"></i>
+
+                    <!-- SEARCH BUTTON -->
+
+                    <button
+                        type="submit"
+                        class="store-search-button"
+                    >
+
+                        <span>
+                            Search Locations
+                        </span>
+
+                        <i
+                            class="fa-solid fa-arrow-right"
+                            aria-hidden="true"
+                        ></i>
+
                     </button>
 
                 </form>
 
 
-                <div class="loc-find-options">
+                <!-- =========================================
+                     CURRENT LOCATION
+                ========================================== -->
+
+                <div class="store-search-current">
 
                     <button
                         type="button"
-                        class="loc-current-location"
+                        class="store-search-current-button"
                         id="useCurrentLocation"
                     >
-                        <i class="fa-solid fa-crosshairs"></i>
-                        <span>Use My Current Location</span>
+
+                        <i
+                            class="fa-solid fa-crosshairs"
+                            aria-hidden="true"
+                        ></i>
+
+                        <span>
+                            Use My Current Location
+                        </span>
+
                     </button>
 
                 </div>
@@ -393,31 +447,40 @@
             </div>
 
 
-            <!-- RIGHT VISUAL -->
+            <!-- =============================================
+                 RIGHT — IMAGE
+            ============================================== -->
 
-            <div class="loc-find-visual">
+            <div class="store-search-visual">
 
-                
-
-                <div class="loc-find-image">
+                <div class="store-search-image">
 
                     <img
                         src="images/location-find.jpg"
-                        alt="Frozen yogurt shop location"
+                        alt="Frozen yogurt shop interior and toppings"
                         loading="lazy"
                     >
 
                 </div>
 
-                <div class="loc-find-badge">
 
-                    <i class="fa-solid fa-map-location-dot"></i>
+                <!-- IMAGE BADGE -->
 
-                    <span>FIND YOUR FLAVOR</span>
+                <div class="store-search-badge">
+
+                    <i
+                        class="fa-solid fa-map-location-dot"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        FIND YOUR FLAVOR
+                    </span>
 
                 </div>
 
             </div>
+
 
         </div>
 
