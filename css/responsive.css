@@ -36742,3 +36742,810 @@ button,
     }
 
 }
+
+
+
+
+
+
+
+
+
+/* =========================================================
+   STORE SEARCH — RESPONSIVE
+========================================================= */
+
+
+/* =========================================================
+   iPAD PRO / TABLET
+   1100px
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .store-search-section {
+        padding: 75px 0 85px;
+    }
+
+    .store-search-container {
+        width: min(100% - 40px, 950px);
+    }
+
+
+    /* TOP HEADING */
+
+    .store-search-heading {
+        max-width: 760px;
+        margin-bottom: 40px;
+    }
+
+    .store-search-heading-label {
+        font-size: 11px;
+        letter-spacing: 2.5px;
+    }
+
+    .store-search-heading h2 {
+        font-size: 44px;
+        line-height: 1.15;
+    }
+
+    .store-search-heading p {
+        font-size: 14px;
+    }
+
+
+    /* CARD */
+
+    .store-search-card {
+        max-width: 900px;
+
+        min-height: 470px;
+
+        padding: 35px;
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            250px;
+
+        gap: 30px;
+    }
+
+
+    /* SEARCH CONTENT */
+
+    .store-search-content {
+        max-width: 480px;
+    }
+
+    .store-search-eyebrow {
+        font-size: 11px;
+    }
+
+    .store-search-content h3 {
+        font-size: 34px;
+    }
+
+    .store-search-content > p {
+        font-size: 13px;
+        max-width: 390px;
+    }
+
+
+    /* IMAGE */
+
+    .store-search-visual {
+        height: 370px;
+    }
+
+
+    /* FORM */
+
+    .store-search-form {
+        grid-template-columns:
+            minmax(0, 1fr)
+            175px;
+
+        gap: 8px;
+    }
+
+    .store-search-button {
+        width: 175px;
+        font-size: 11px;
+    }
+
+}
+
+
+/* =========================================================
+   iPAD MINI
+   768px — 833px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 833px) {
+
+    .store-search-section {
+        padding: 65px 0 75px;
+    }
+
+    .store-search-container {
+        width: calc(100% - 36px);
+        max-width: 760px;
+    }
+
+
+    /* TOP HEADING */
+
+    .store-search-heading {
+        max-width: 650px;
+        margin-bottom: 35px;
+    }
+
+    .store-search-heading-label {
+        font-size: 10px;
+        letter-spacing: 2.2px;
+    }
+
+    .store-search-heading h2 {
+        font-size: 38px;
+        line-height: 1.15;
+        letter-spacing: -0.8px;
+    }
+
+    .store-search-heading p {
+        max-width: 590px;
+
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+
+    /* CARD */
+
+    .store-search-card {
+        max-width: 720px;
+
+        min-height: 430px;
+
+        padding: 30px;
+
+        grid-template-columns:
+            minmax(0, 1fr)
+            220px;
+
+        gap: 25px;
+
+        border-radius: 25px;
+    }
+
+
+    /* CONTENT */
+
+    .store-search-content {
+        max-width: 420px;
+    }
+
+    .store-search-eyebrow {
+        margin-bottom: 10px;
+
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .store-search-content h3 {
+        margin-bottom: 13px;
+
+        font-size: 30px;
+    }
+
+    .store-search-content > p {
+        max-width: 350px;
+
+        margin-bottom: 22px;
+
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* FORM */
+
+    .store-search-form {
+        grid-template-columns:
+            minmax(0, 1fr)
+            150px;
+
+        gap: 7px;
+    }
+
+    .store-search-input {
+        height: 50px;
+    }
+
+    .store-search-input input {
+        height: 50px;
+
+        padding-left: 42px;
+
+        font-size: 10px;
+    }
+
+    .store-search-input i {
+        left: 15px;
+        font-size: 13px;
+    }
+
+    .store-search-button {
+        width: 150px;
+        height: 50px;
+
+        padding: 0 10px;
+
+        gap: 7px;
+
+        font-size: 10px;
+    }
+
+    .store-search-button i {
+        font-size: 10px;
+    }
+
+
+    /* CURRENT LOCATION */
+
+    .store-search-current {
+        margin-top: 17px;
+    }
+
+    .store-search-current-button {
+        font-size: 10px;
+    }
+
+
+    /* IMAGE */
+
+    .store-search-visual {
+        height: 350px;
+    }
+
+    .store-search-badge {
+        bottom: 18px;
+
+        min-height: 36px;
+
+        padding: 0 12px;
+
+        gap: 6px;
+
+        font-size: 8px;
+    }
+
+    .store-search-badge i {
+        font-size: 10px;
+    }
+
+    .store-search-visual::before {
+        width: 55px;
+        height: 55px;
+
+        top: -20px;
+        right: -20px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .store-search-section {
+        padding: 55px 0 65px;
+    }
+
+    .store-search-container {
+        width: calc(100% - 30px);
+        max-width: 600px;
+    }
+
+
+    /* =====================================================
+       TOP HEADING
+    ===================================================== */
+
+    .store-search-heading {
+        max-width: 560px;
+
+        margin-bottom: 30px;
+
+        text-align: center;
+    }
+
+    .store-search-heading-label {
+        margin-bottom: 10px;
+
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .store-search-heading h2 {
+        margin-bottom: 13px;
+
+        font-size: 34px;
+        line-height: 1.16;
+
+        letter-spacing: -0.5px;
+    }
+
+    .store-search-heading p {
+        max-width: 500px;
+
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       CARD
+    ===================================================== */
+
+    .store-search-card {
+        width: 100%;
+        max-width: 560px;
+
+        min-height: auto;
+
+        padding: 30px 24px 35px;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+
+        border-radius: 24px;
+    }
+
+
+    /* =====================================================
+       CONTENT
+    ===================================================== */
+
+    .store-search-content {
+        width: 100%;
+        max-width: 500px;
+
+        order: 1;
+    }
+
+    .store-search-eyebrow {
+        margin-bottom: 9px;
+
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+    .store-search-content h3 {
+        margin-bottom: 12px;
+
+        font-size: 29px;
+        line-height: 1.18;
+    }
+
+    .store-search-content > p {
+        max-width: 450px;
+
+        margin-bottom: 22px;
+
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+
+    /* =====================================================
+       FORM
+    ===================================================== */
+
+    .store-search-form {
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .store-search-input {
+        width: 100%;
+        height: 50px;
+    }
+
+    .store-search-input input {
+        width: 100%;
+        height: 50px;
+
+        padding-left: 42px;
+
+        font-size: 11px;
+    }
+
+    .store-search-input i {
+        left: 15px;
+
+        font-size: 13px;
+    }
+
+    .store-search-button {
+        width: 100%;
+        height: 50px;
+
+        font-size: 11px;
+    }
+
+
+    /* =====================================================
+       CURRENT LOCATION
+    ===================================================== */
+
+    .store-search-current {
+        margin-top: 17px;
+    }
+
+    .store-search-current-button {
+        font-size: 10px;
+    }
+
+
+    /* =====================================================
+       IMAGE
+    ===================================================== */
+
+    .store-search-visual {
+        width: 100%;
+        height: 330px;
+
+        order: 2;
+    }
+
+    .store-search-image {
+        border-radius: 18px;
+    }
+
+    .store-search-badge {
+        bottom: 18px;
+
+        min-height: 38px;
+
+        padding: 0 14px;
+
+        font-size: 8px;
+    }
+
+    .store-search-visual::before {
+        width: 55px;
+        height: 55px;
+
+        top: -18px;
+        right: -18px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   480px
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .store-search-section {
+        padding: 45px 0 55px;
+    }
+
+    .store-search-container {
+        width: calc(100% - 24px);
+    }
+
+
+    /* TOP HEADING */
+
+    .store-search-heading {
+        margin-bottom: 25px;
+    }
+
+    .store-search-heading-label {
+        font-size: 9px;
+        letter-spacing: 1.8px;
+    }
+
+    .store-search-heading h2 {
+        font-size: 28px;
+        line-height: 1.18;
+    }
+
+    .store-search-heading p {
+        font-size: 11px;
+        line-height: 1.65;
+    }
+
+
+    /* CARD */
+
+    .store-search-card {
+        padding: 25px 18px 28px;
+
+        gap: 25px;
+
+        border-radius: 20px;
+    }
+
+
+    /* CONTENT */
+
+    .store-search-eyebrow {
+        font-size: 9px;
+        letter-spacing: 1.8px;
+    }
+
+    .store-search-content h3 {
+        font-size: 25px;
+    }
+
+    .store-search-content > p {
+        font-size: 11px;
+    }
+
+
+    /* INPUT */
+
+    .store-search-input {
+        height: 48px;
+    }
+
+    .store-search-input input {
+        height: 48px;
+
+        padding-left: 40px;
+
+        font-size: 10px;
+    }
+
+    .store-search-input i {
+        left: 14px;
+
+        font-size: 12px;
+    }
+
+
+    /* BUTTON */
+
+    .store-search-button {
+        height: 48px;
+
+        font-size: 10px;
+    }
+
+
+    /* IMAGE */
+
+    .store-search-visual {
+        height: 280px;
+    }
+
+    .store-search-badge {
+        bottom: 15px;
+
+        min-height: 34px;
+
+        padding: 0 11px;
+
+        font-size: 7px;
+    }
+
+    .store-search-badge i {
+        font-size: 9px;
+    }
+
+    .store-search-visual::before {
+        width: 48px;
+        height: 48px;
+
+        top: -15px;
+        right: -15px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+   360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .store-search-section {
+        padding: 38px 0 48px;
+    }
+
+    .store-search-container {
+        width: calc(100% - 20px);
+    }
+
+
+    /* HEADING */
+
+    .store-search-heading {
+        margin-bottom: 22px;
+    }
+
+    .store-search-heading-label {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .store-search-heading h2 {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+
+    .store-search-heading p {
+        font-size: 10px;
+    }
+
+
+    /* CARD */
+
+    .store-search-card {
+        padding: 22px 15px 25px;
+
+        gap: 22px;
+
+        border-radius: 18px;
+    }
+
+
+    /* CONTENT */
+
+    .store-search-eyebrow {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+
+    .store-search-content h3 {
+        font-size: 22px;
+    }
+
+    .store-search-content > p {
+        font-size: 10px;
+    }
+
+
+    /* FORM */
+
+    .store-search-input,
+    .store-search-input input {
+        height: 46px;
+    }
+
+    .store-search-input input {
+        padding-left: 38px;
+
+        font-size: 9px;
+    }
+
+    .store-search-input i {
+        left: 13px;
+
+        font-size: 11px;
+    }
+
+    .store-search-button {
+        height: 46px;
+
+        font-size: 9px;
+    }
+
+    .store-search-current-button {
+        font-size: 9px;
+    }
+
+
+    /* IMAGE */
+
+    .store-search-visual {
+        height: 240px;
+    }
+
+    .store-search-badge {
+        bottom: 12px;
+
+        min-height: 30px;
+
+        padding: 0 9px;
+
+        font-size: 6px;
+    }
+
+    .store-search-badge i {
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================================================
+   RTL — RESPONSIVE FIXES
+========================================================= */
+
+@media (max-width: 767px) {
+
+    body.rtl .store-search-card {
+        direction: rtl;
+    }
+
+    body.rtl .store-search-content {
+        text-align: center;
+    }
+
+    body.rtl .store-search-form {
+        direction: rtl;
+    }
+
+    body.rtl .store-search-input i {
+        left: auto;
+        right: 15px;
+    }
+
+    body.rtl .store-search-input input {
+        padding-left: 15px;
+        padding-right: 42px;
+
+        text-align: right;
+    }
+
+    body.rtl .store-search-button {
+        direction: rtl;
+    }
+
+    body.rtl .store-search-current-button {
+        direction: rtl;
+    }
+
+    body.rtl .store-search-badge {
+        left: 50%;
+        right: auto;
+
+        transform: translateX(50%);
+    }
+}
+
+
+/* =========================================================
+   RTL — TABLET
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1100px) {
+
+    body.rtl .store-search-input i {
+        left: auto;
+        right: 15px;
+    }
+
+    body.rtl .store-search-input input {
+        padding-left: 15px;
+        padding-right: 42px;
+
+        text-align: right;
+    }
+
+    body.rtl .store-search-form {
+        direction: rtl;
+    }
+
+    body.rtl .store-search-button {
+        direction: rtl;
+    }
+}
