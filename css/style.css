@@ -30420,3 +30420,625 @@ body.rtl .store-search-badge {
 
 
 
+/* =========================================================
+   HOME 2 STORY — STATS
+   4 EQUAL BOXES IN ONE ROW
+========================================================= */
+
+.home2-story-stats {
+    width: 100%;
+    max-width: 1050px;
+    margin: 55px auto 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 0;
+
+    border-top: 1px solid var(--border-color);
+    border-bottom: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   EACH STAT BOX
+========================================================= */
+
+.home2-story-stat {
+    width: 100%;
+    min-width: 0;
+
+    padding: 38px 32px 35px;
+
+    box-sizing: border-box;
+}
+
+
+/* VERTICAL DIVIDER */
+
+.home2-story-stat + .home2-story-stat {
+    border-left: 1px solid var(--border-color);
+}
+
+
+/* =========================================================
+   NUMBER AREA
+========================================================= */
+
+.home2-story-stat-number {
+    width: 100%;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+
+    gap: 6px;
+
+    margin: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    overflow: visible;
+}
+
+
+/* NUMBER */
+
+.home2-story-stat-number .counter {
+    display: inline-block;
+
+    position: static;
+
+    width: auto;
+    min-width: max-content;
+
+    margin: 0;
+    padding: 0;
+
+    flex: 0 0 auto;
+    flex-shrink: 0;
+
+    font-size: 58px;
+    line-height: 1;
+    font-weight: 500;
+    letter-spacing: -2px;
+
+    white-space: nowrap;
+
+    transform: none;
+}
+
+
+/* PLUS */
+
+.home2-story-stat-number .counter-plus {
+    display: inline-block;
+
+    position: static;
+
+    width: auto;
+    min-width: max-content;
+    height: auto;
+
+    margin: 0;
+    padding: 0;
+
+    flex: 0 0 auto;
+    flex-shrink: 0;
+
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 500;
+
+    color: var(--primary-color);
+
+    white-space: nowrap;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   STAT TITLE
+========================================================= */
+
+.home2-story-stat h3 {
+    width: 100%;
+
+    margin: 12px 0 0;
+    padding: 0;
+
+    color: var(--heading-color);
+
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   IMPORTANT — REMOVE OLD POSITIONING
+========================================================= */
+
+.home2-story-stat-number *,
+.home2-story-stat-number .counter,
+.home2-story-stat-number .counter-plus {
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    inset: auto;
+
+    transform: none;
+}
+
+
+/* =========================================================
+   IPAD PRO
+========================================================= */
+
+@media (min-width: 834px) and (max-width: 1100px) {
+
+    .home2-story-stats {
+        max-width: 900px;
+        margin-top: 45px;
+    }
+
+    .home2-story-stat {
+        padding: 30px 22px;
+    }
+
+    .home2-story-stat-number .counter {
+        font-size: 42px;
+        letter-spacing: -1px;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 18px;
+    }
+
+    .home2-story-stat h3 {
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================================
+   IPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 833px) {
+
+    .home2-story-stats {
+        max-width: 720px;
+        margin-top: 40px;
+    }
+
+    .home2-story-stat {
+        padding: 25px 14px;
+    }
+
+    .home2-story-stat-number .counter {
+        font-size: 34px;
+        letter-spacing: -0.5px;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 15px;
+    }
+
+    .home2-story-stat h3 {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .home2-story-stats {
+        max-width: 100%;
+        margin-top: 35px;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        border-top: 1px solid var(--border-color);
+    }
+
+    .home2-story-stat {
+        padding: 25px 18px;
+    }
+
+    /* Vertical dividers */
+    .home2-story-stat + .home2-story-stat {
+        border-left: 1px solid var(--border-color);
+    }
+
+    /* Every odd row gets a top divider */
+    .home2-story-stat:nth-child(n + 3) {
+        border-top: 1px solid var(--border-color);
+    }
+
+    .home2-story-stat-number .counter {
+        font-size: 32px;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 15px;
+    }
+
+    .home2-story-stat h3 {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .home2-story-stat {
+        padding: 22px 14px;
+    }
+
+    .home2-story-stat-number {
+        gap: 4px;
+    }
+
+    .home2-story-stat-number .counter {
+        font-size: 28px;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 14px;
+    }
+
+    .home2-story-stat h3 {
+        margin-top: 9px;
+        font-size: 11px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 360px) {
+
+    .home2-story-stat {
+        padding: 20px 10px;
+    }
+
+    .home2-story-stat-number .counter {
+        font-size: 25px;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 12px;
+    }
+
+    .home2-story-stat h3 {
+        font-size: 10px;
+    }
+}
+/* =========================================================
+   HOME 2 STORY STATS — FULL WIDTH BOX
+========================================================= */
+
+.home2-story-stats {
+    width: 100% !important;
+    max-width: none !important;
+
+    margin: 55px 0 0 !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 0 !important;
+
+    padding: 35px 0 !important;
+
+    background: var(--card-bg) !important;
+
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-medium) !important;
+
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+}
+
+
+/* =========================================================
+   STAT BOX
+========================================================= */
+
+.home2-story-stat {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    padding: 15px 45px !important;
+
+    background: transparent !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* VERTICAL DIVIDERS */
+
+.home2-story-stat + .home2-story-stat {
+    border-left: 1px solid var(--border-color) !important;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.home2-story-stat-number {
+    width: 100% !important;
+
+    display: flex !important;
+    align-items: baseline !important;
+    justify-content: flex-start !important;
+
+    gap: 7px !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    white-space: nowrap !important;
+    overflow: visible !important;
+}
+
+
+.home2-story-stat-number .counter {
+    position: static !important;
+
+    display: inline-block !important;
+
+    width: auto !important;
+    min-width: max-content !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex: 0 0 auto !important;
+    flex-shrink: 0 !important;
+
+    font-size: 52px !important;
+    line-height: 1 !important;
+
+    white-space: nowrap !important;
+
+    transform: none !important;
+}
+
+
+.home2-story-stat-number .counter-plus {
+    position: static !important;
+
+    display: inline-block !important;
+
+    width: auto !important;
+    min-width: max-content !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex: 0 0 auto !important;
+    flex-shrink: 0 !important;
+
+    font-size: 22px !important;
+    line-height: 1 !important;
+
+    color: var(--primary-color) !important;
+
+    transform: none !important;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.home2-story-stat h3 {
+    margin: 12px 0 0 !important;
+
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+
+    color: var(--heading-color) !important;
+}
+
+
+/* =========================================================
+   IPAD PRO
+========================================================= */
+
+@media (min-width: 834px) and (max-width: 1100px) {
+
+    .home2-story-stats {
+        width: 100% !important;
+        max-width: none !important;
+
+        margin-top: 45px !important;
+
+        padding: 28px 0 !important;
+    }
+
+    .home2-story-stat {
+        padding: 12px 24px !important;
+    }
+
+    .home2-story-stat-number .counter {
+        font-size: 40px !important;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 18px !important;
+    }
+
+    .home2-story-stat h3 {
+        font-size: 13px !important;
+    }
+}
+
+
+/* =========================================================
+   IPAD MINI
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 833px) {
+
+    .home2-story-stats {
+        width: 100% !important;
+        max-width: none !important;
+
+        padding: 25px 0 !important;
+    }
+
+    .home2-story-stat {
+        padding: 10px 15px !important;
+    }
+
+    .home2-story-stat-number .counter {
+        font-size: 32px !important;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 15px !important;
+    }
+
+    .home2-story-stat h3 {
+        font-size: 12px !important;
+    }
+}
+
+
+
+
+/* =========================================================
+   HOME 2 STORY — FULL WIDTH STATS
+========================================================= */
+
+.home2-story-stats {
+    width: 100% !important;
+    max-width: none !important;
+
+    grid-column: 1 / -1 !important;
+
+    margin: 50px 0 0 !important;
+
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 0 !important;
+
+    box-sizing: border-box !important;
+
+    background: var(--card-bg) !important;
+
+    border: 1px solid var(--border-color) !important;
+    border-radius: var(--radius-medium) !important;
+
+    overflow: hidden !important;
+}
+
+
+/* EACH STAT */
+
+.home2-story-stat {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    padding: 35px 40px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* VERTICAL DIVIDERS */
+
+.home2-story-stat + .home2-story-stat {
+    border-left: 1px solid var(--border-color) !important;
+}
+
+
+/* NUMBER */
+
+.home2-story-stat-number {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: 6px !important;
+
+    width: max-content !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    white-space: nowrap !important;
+}
+
+
+.home2-story-stat-number .counter {
+    position: static !important;
+
+    display: inline-block !important;
+
+    width: auto !important;
+    min-width: max-content !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex: 0 0 auto !important;
+
+    font-size: 52px !important;
+    line-height: 1 !important;
+
+    white-space: nowrap !important;
+
+    transform: none !important;
+}
+
+
+.home2-story-stat-number .counter-plus {
+    position: static !important;
+
+    display: inline-block !important;
+
+    width: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    flex: 0 0 auto !important;
+
+    font-size: 22px !important;
+    line-height: 1 !important;
+
+    color: var(--primary-color) !important;
+
+    transform: none !important;
+}
+
+
+/* TITLE */
+
+.home2-story-stat h3 {
+    margin: 12px 0 0 !important;
+
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+
+    color: var(--heading-color) !important;
+}
