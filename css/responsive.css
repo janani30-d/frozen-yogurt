@@ -20141,6 +20141,7 @@ body.rtl .about-ingredients-floating-two {
     body.rtl .sc-content {
         text-align: right;
     }
+
 }
 
 
@@ -20173,6 +20174,7 @@ body.rtl .about-ingredients-floating-two {
     body.rtl .sc-button i {
         transform: rotate(180deg);
     }
+
 }
 
 
@@ -37548,4 +37550,276 @@ button,
     body.rtl .store-search-button {
         direction: rtl;
     }
+}
+
+
+
+
+
+/* =========================================
+   HOME 2 STORY STATS — RESPONSIVE
+========================================= */
+
+/* iPad Pro and smaller laptops */
+@media (max-width: 1100px) {
+    .home2-story-stats {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 40px auto 0 !important;
+        padding: 30px 24px !important;
+        box-sizing: border-box;
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 28px 24px !important;
+    }
+
+    .home2-story-stat {
+        width: 100% !important;
+        min-width: 0 !important;
+        padding: 0 20px !important;
+        box-sizing: border-box;
+    }
+
+    .home2-story-stat-number {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: nowrap;
+        gap: 4px;
+    }
+
+    .home2-story-stat-number .counter {
+        font-size: 48px !important;
+        line-height: 1.15 !important;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 28px !important;
+    }
+
+    .home2-story-stat h3 {
+        font-size: 15px !important;
+        line-height: 1.5 !important;
+        margin-top: 8px;
+        overflow-wrap: break-word;
+    }
+}
+
+/* iPad Mini — 768px to 833px */
+@media (min-width: 768px) and (max-width: 833px) {
+    .home2-story-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 30px 20px !important;
+        padding: 28px 16px !important;
+    }
+
+    .home2-story-stat {
+        padding: 0 16px !important;
+    }
+
+    .home2-story-stat-number .counter {
+        font-size: 42px !important;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 24px !important;
+    }
+
+    .home2-story-stat h3 {
+        font-size: 14px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .home2-story-stats {
+        width: 100% !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 24px 12px !important;
+        margin: 30px auto 0 !important;
+        padding: 24px 8px !important;
+    }
+
+    .home2-story-stat {
+        padding: 0 10px !important;
+        min-width: 0 !important;
+    }
+
+    .home2-story-stat-number .counter {
+        font-size: 36px !important;
+        line-height: 1.2 !important;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 21px !important;
+    }
+
+    .home2-story-stat h3 {
+        font-size: 13px !important;
+        line-height: 1.5 !important;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .home2-story-stats {
+        gap: 22px 8px !important;
+        padding: 20px 4px !important;
+    }
+
+    .home2-story-stat {
+        padding: 0 8px !important;
+    }
+
+    .home2-story-stat-number .counter {
+        font-size: 31px !important;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 19px !important;
+    }
+
+    .home2-story-stat h3 {
+        font-size: 12px !important;
+    }
+}
+
+/* Extra-small mobile */
+@media (max-width: 360px) {
+    .home2-story-stat-number .counter {
+        font-size: 27px !important;
+    }
+
+    .home2-story-stat-number .counter-plus {
+        font-size: 17px !important;
+    }
+
+    .home2-story-stat h3 {
+        font-size: 11px !important;
+    }
+}
+
+
+
+
+
+
+
+
+/* Remove About Process dotted lines in RTL mode */
+body.rtl .about-process-line {
+    display: none !important;
+    border: none !important;
+    background: none !important;
+    content: none !important;
+}
+/* Remove all About Process connector lines in RTL mode */
+body.rtl .about-process-line,
+body.rtl .about-process-item::before,
+body.rtl .about-process-item::after,
+body.rtl .about-process-list::before,
+body.rtl .about-process-list::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+    background: none !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+/* Remove About Process dotted lines everywhere */
+.about-process-line,
+.about-process-item::before,
+.about-process-item::after,
+.about-process-list::before,
+.about-process-list::after {
+    display: none !important;
+    content: none !important;
+    border: none !important;
+    background: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* Signature Creations alignment - RTL mode only */
+html[dir="rtl"] .sc-item .sc-content {
+    text-align: left !important;
+    direction: ltr !important;
+}
+
+html[dir="rtl"] .sc-item .sc-content > p {
+    display: block !important;
+    width: 100% !important;
+    max-width: 460px !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+    direction: ltr !important;
+}
+
+html[dir="rtl"] .sc-item .sc-ingredients,
+html[dir="rtl"] .sc-item .sc-bottom {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    justify-content: flex-start !important;
+    direction: ltr !important;
+}
+
+
+
+
+
+
+
+/* Contact phone input alignment - RTL mode only */
+html[dir="rtl"] #contactPhone {
+    direction: rtl !important;
+    text-align: right !important;
+    unicode-bidi: plaintext !important;
+}
+
+html[dir="rtl"] #contactPhone::placeholder {
+    direction: rtl !important;
+    text-align: right !important;
+    unicode-bidi: plaintext !important;
+}
+
+
+
+
+
+/* Franchise Hero — Center Paragraph */
+.fr-hero-content p {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 35px !important;
+    text-align: center !important;
+}
+
+
+
+
+/* Location Hero — Center Paragraph */
+.loc-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loc-hero-content p {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 35px !important;
+    text-align: center !important;
+    align-self: center;
 }

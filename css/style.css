@@ -31068,3 +31068,157 @@ body.rtl .store-search-badge {
 .login-forgot-link {
     margin: 0 !important;
 }
+
+
+
+/* Featured Flavors — Desktop Paragraph */
+@media (min-width: 1101px) {
+    .ff-info p {
+        font-size: 13px !important;
+        font-weight: 400 !important;
+        line-height: 1.8 !important;
+    }
+}
+
+
+
+
+/* Login Page — Circular Control Borders */
+.login-auth-control {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    padding: 0 !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Register Page — Circular Control Borders */
+.register-auth-control {
+    width: 60px !important;
+    height: 60px !important;
+    min-width: 60px !important;
+    padding: 0 !important;
+    border: 1px solid var(--border-color) !important;
+    border-radius: 50% !important;
+    background: transparent !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+/* Icon Size */
+.login-auth-control i,
+.register-auth-control i {
+    font-size: 17px !important;
+}
+
+/* Hover Effect */
+.login-auth-control:hover,
+.register-auth-control:hover {
+    border-color: var(--primary-color) !important;
+    color: var(--primary-dark) !important;
+    background: var(--dropdown-hover) !important;
+}
+
+
+
+
+/* Login Page Logo */
+.login-logo img {
+    width: 240px !important;
+    max-width: 100% !important;
+    height: 65px !important;
+    object-fit: contain;
+}
+
+/* Register Page Logo */
+.register-logo img {
+    width: 240px !important;
+    max-width: 100% !important;
+    height: 65px !important;
+    object-fit: contain;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .login-logo img,
+    .register-logo img {
+        width: 170px !important;
+        height: 48px !important;
+    }
+}
+
+
+
+
+
+
+/* Signature Creations — RTL paragraph alignment */
+body.rtl .sc-item .sc-content p {
+    text-align: left !important;
+    direction: ltr !important;
+}
+
+
+
+
+
+/* Signature Creations — RTL spacing fix */
+body.rtl .sc-card .sc-content h3,
+body.rtl .sc-card .sc-info h3 {
+    margin-bottom: 8px !important;
+    padding-bottom: 0 !important;
+}
+
+body.rtl .sc-card .sc-content p,
+body.rtl .sc-card .sc-info p {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    line-height: 1.7 !important;
+}
+
+/* Remove parent gap in RTL */
+body.rtl .sc-card .sc-content,
+body.rtl .sc-card .sc-info {
+    row-gap: 0 !important;
+    gap: 0 !important;
+}
+
+body.rtl .sc-card .sc-content h3 + p,
+body.rtl .sc-card .sc-info h3 + p {
+    margin-top: 0 !important;
+}
+
+
+
+/* Signature Creations — RTL heading and paragraph alignment */
+body.rtl .sc-content,
+body.rtl .sc-info {
+    text-align: right !important;
+    align-items: stretch !important;
+}
+
+body.rtl .sc-content h3,
+body.rtl .sc-info h3,
+body.rtl .sc-content p,
+body.rtl .sc-info p {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+    text-align: right !important;
+    transform: none !important;
+}
+
+
+
+
+
