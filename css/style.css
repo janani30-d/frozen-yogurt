@@ -31222,3 +31222,712 @@ body.rtl .sc-info p {
 
 
 
+/* =========================================
+   HOME 2 — WHY WE'RE DIFFERENT
+   ICON VISIBILITY & HOVER FIX
+========================================= */
+
+/* Icon circle */
+.home2-different-card .home2-different-icon {
+    width: 85px;
+    height: 85px;
+    border: 2px solid #f27ba5;
+    border-radius: 50%;
+    background: #fff0f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+/* Icon itself */
+.home2-different-card .home2-different-icon i {
+    font-size: 32px;
+    color: #e85d8c !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    transition: all 0.3s ease;
+}
+
+/* Individual icon colors */
+.home2-different-card:nth-child(1) .home2-different-icon {
+    background: #e4f5ed;
+    border-color: #78c5a8;
+}
+
+.home2-different-card:nth-child(1) .home2-different-icon i {
+    color: #278b68 !important;
+}
+
+.home2-different-card:nth-child(2) .home2-different-icon {
+    background: #fff0f5;
+    border-color: #f27ba5;
+}
+
+.home2-different-card:nth-child(2) .home2-different-icon i {
+    color: #e85d8c !important;
+}
+
+.home2-different-card:nth-child(3) .home2-different-icon {
+    background: #f0eafa;
+    border-color: #b69bdc;
+}
+
+.home2-different-card:nth-child(3) .home2-different-icon i {
+    color: #8060b5 !important;
+}
+
+.home2-different-card:nth-child(4) .home2-different-icon {
+    background: #fff2e5;
+    border-color: #f2b77d;
+}
+
+.home2-different-card:nth-child(4) .home2-different-icon i {
+    color: #c77b36 !important;
+}
+
+/* Card hover */
+.home2-different-card:hover .home2-different-icon {
+    background: #e85d8c !important;
+    border-color: #e85d8c !important;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(232, 93, 140, 0.28);
+}
+
+/* Keep icon clearly visible on hover */
+.home2-different-card:hover .home2-different-icon i {
+    color: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark-mode .home2-different-card .home2-different-icon {
+    background: #30262b;
+    border-color: #f27ba5;
+}
+
+body.dark-mode .home2-different-card .home2-different-icon i {
+    color: #ff8db4 !important;
+}
+
+body.dark-mode .home2-different-card:nth-child(1) .home2-different-icon {
+    border-color: #78c5a8;
+}
+
+body.dark-mode .home2-different-card:nth-child(1) .home2-different-icon i {
+    color: #83d9b5 !important;
+}
+
+body.dark-mode .home2-different-card:nth-child(3) .home2-different-icon {
+    border-color: #b69bdc;
+}
+
+body.dark-mode .home2-different-card:nth-child(3) .home2-different-icon i {
+    color: #c5a9f0 !important;
+}
+
+body.dark-mode .home2-different-card:nth-child(4) .home2-different-icon {
+    border-color: #f2b77d;
+}
+
+body.dark-mode .home2-different-card:nth-child(4) .home2-different-icon i {
+    color: #ffc18a !important;
+}
+
+/* Dark mode hover */
+body.dark-mode .home2-different-card:hover .home2-different-icon {
+    background: #e85d8c !important;
+    border-color: #ff9cbd !important;
+}
+
+body.dark-mode .home2-different-card:hover .home2-different-icon i {
+    color: #ffffff !important;
+}
+
+
+
+
+
+/* =========================================
+   HEADER ENQUIRY BUTTON
+========================================= */
+
+.header-enquiry-btn {
+    min-width: 145px;
+    height: 44px;
+    padding: 0 20px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    background: var(--button-bg);
+    color: var(--button-text);
+
+    border: 1px solid var(--button-bg);
+    border-radius: var(--radius-pill);
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+
+    white-space: nowrap;
+    transition: var(--transition);
+}
+
+.header-enquiry-btn i {
+    font-size: 13px;
+    transition: transform .3s ease;
+}
+
+.header-enquiry-btn:hover {
+    background: var(--button-hover);
+    border-color: var(--button-hover);
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.header-enquiry-btn:hover i {
+    transform: translateX(3px);
+}
+
+/* =========================================
+   RTL MODE
+========================================= */
+
+body.rtl .header-enquiry-btn {
+    direction: rtl;
+}
+
+body.rtl .header-enquiry-btn:hover i {
+    transform: translateX(-3px);
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark-mode .header-enquiry-btn {
+    background: var(--button-bg);
+    color: #fff;
+    border-color: var(--button-bg);
+}
+
+body.dark-mode .header-enquiry-btn:hover {
+    background: var(--button-hover);
+    color: #fff;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1100px) {
+    .header-enquiry-btn {
+        width: 100%;
+        min-width: 0;
+        height: 44px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-enquiry-btn {
+        font-size: 12px;
+        height: 42px;
+        padding: 0 16px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   ENQUIRY PAGE — MAIN CSS
+===================================================== */
+
+.enquiry-page-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    background: var(--body-bg);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+/* =====================================================
+   TOP BAR
+===================================================== */
+
+.enquiry-topbar {
+    width: 100%;
+    min-height: 90px;
+    padding: 14px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--header-bg);
+    border-bottom: 1px solid var(--border-color);
+    position: relative;
+    z-index: 100;
+}
+
+.enquiry-topbar-logo {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.enquiry-topbar-logo img {
+    width: 220px;
+    height: 65px;
+    display: block;
+    object-fit: contain;
+}
+
+.enquiry-topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.enquiry-topbar-btn {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--card-bg);
+    color: var(--heading-color);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.enquiry-topbar-btn svg {
+    width: 19px;
+    height: 19px;
+    display: block;
+}
+
+.enquiry-topbar-btn:hover {
+    background: var(--button-bg);
+    border-color: var(--button-bg);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* Dark mode icons */
+
+.enquiry-sun-icon {
+    display: none !important;
+}
+
+body.dark-mode .enquiry-moon-icon {
+    display: none !important;
+}
+
+body.dark-mode .enquiry-sun-icon {
+    display: block !important;
+}
+
+/* =====================================================
+   ENQUIRY SECTION
+===================================================== */
+
+.enquiry-section {
+    width: 100%;
+    padding: 75px 20px 100px;
+    background: var(--body-bg);
+}
+
+.enquiry-container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+/* =====================================================
+   ENQUIRY HEADING
+===================================================== */
+
+.enquiry-heading {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto 45px;
+    text-align: center;
+}
+
+.enquiry-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: var(--primary-dark);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.enquiry-heading h1 {
+    margin: 0 0 16px;
+    color: var(--heading-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.enquiry-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.9;
+}
+
+/* =====================================================
+   ENQUIRY CARD
+===================================================== */
+
+.enquiry-card {
+    width: 100%;
+    padding: 42px 45px;
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 22px;
+    box-shadow: var(--shadow-light);
+}
+
+/* Card heading */
+
+.enquiry-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.enquiry-card-icon {
+    width: 54px;
+    height: 54px;
+    min-width: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dropdown-hover);
+    color: var(--primary-dark);
+    border-radius: 15px;
+    font-size: 21px;
+}
+
+.enquiry-card-heading h2 {
+    margin: 0 0 6px;
+    color: var(--heading-color);
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.enquiry-card-heading p {
+    margin: 0;
+    color: var(--muted-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* =====================================================
+   FORM GRID
+===================================================== */
+
+.enquiry-form {
+    width: 100%;
+}
+
+.enquiry-form-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px 22px;
+}
+
+.enquiry-field {
+    width: 100%;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.enquiry-field-full {
+    grid-column: 1 / -1;
+}
+
+.enquiry-field label {
+    display: block;
+    color: var(--heading-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.enquiry-field label span {
+    color: var(--primary-dark);
+}
+
+/* Inputs and select */
+
+.enquiry-field input,
+.enquiry-field select,
+.enquiry-field textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 14px 16px;
+    background: var(--body-bg);
+    color: var(--heading-color);
+    border: 1px solid var(--border-color);
+    border-radius: 9px;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.6;
+    transition: var(--transition);
+}
+
+.enquiry-field input,
+.enquiry-field select {
+    height: 51px;
+}
+
+.enquiry-field textarea {
+    min-height: 145px;
+    resize: vertical;
+}
+
+.enquiry-field input::placeholder,
+.enquiry-field textarea::placeholder {
+    color: var(--muted-color);
+    opacity: 0.8;
+}
+
+.enquiry-field select {
+    cursor: pointer;
+}
+
+.enquiry-field select option {
+    background: var(--card-bg);
+    color: var(--heading-color);
+}
+
+/* Input focus */
+
+.enquiry-field input:focus,
+.enquiry-field select:focus,
+.enquiry-field textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 3px rgba(242, 123, 165, 0.12);
+}
+
+/* =====================================================
+   FORM BOTTOM
+===================================================== */
+
+.enquiry-form-bottom {
+    width: 100%;
+    margin-top: 30px;
+    padding-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.enquiry-form-bottom p {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--muted-color);
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.enquiry-form-bottom p i {
+    color: var(--secondary-dark);
+    font-size: 13px;
+}
+
+/* =====================================================
+   SUBMIT BUTTON
+===================================================== */
+
+.enquiry-submit-btn {
+    min-width: 185px;
+    min-height: 49px;
+    padding: 12px 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--button-bg);
+    color: var(--button-text);
+    border: 1px solid var(--button-bg);
+    border-radius: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.enquiry-submit-btn i {
+    font-size: 13px;
+    transition: transform 0.3s ease;
+}
+
+.enquiry-submit-btn:hover {
+    background: var(--button-hover);
+    border-color: var(--button-hover);
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.enquiry-submit-btn:hover i {
+    transform: translateX(4px);
+}
+
+/* =====================================================
+   DARK MODE
+===================================================== */
+
+body.dark-mode .enquiry-page-wrapper,
+body.dark-mode .enquiry-section {
+    background: var(--body-bg);
+}
+
+body.dark-mode .enquiry-topbar {
+    background: var(--header-bg);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .enquiry-topbar-btn {
+    background: var(--card-bg);
+    color: var(--heading-color);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .enquiry-topbar-btn:hover {
+    background: var(--button-bg);
+    border-color: var(--button-bg);
+    color: #ffffff;
+}
+
+body.dark-mode .enquiry-card {
+    background: var(--card-bg);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .enquiry-card-icon {
+    background: var(--dropdown-hover);
+    color: var(--primary-color);
+}
+
+body.dark-mode .enquiry-field input,
+body.dark-mode .enquiry-field select,
+body.dark-mode .enquiry-field textarea {
+    background: var(--body-bg);
+    color: var(--heading-color);
+    border-color: var(--border-color);
+}
+
+body.dark-mode .enquiry-field input::placeholder,
+body.dark-mode .enquiry-field textarea::placeholder {
+    color: var(--muted-color);
+}
+
+body.dark-mode .enquiry-field select option {
+    background: var(--card-bg);
+    color: var(--heading-color);
+}
+
+body.dark-mode .enquiry-submit-btn {
+    background: var(--button-bg);
+    color: #ffffff;
+    border-color: var(--button-bg);
+}
+
+body.dark-mode .enquiry-submit-btn:hover {
+    background: var(--button-hover);
+    color: #ffffff;
+    border-color: var(--button-hover);
+}
+
+/* =====================================================
+   RTL SUPPORT
+===================================================== */
+
+body.rtl .enquiry-page-wrapper {
+    direction: rtl;
+}
+
+body.rtl .enquiry-topbar {
+    direction: rtl;
+}
+
+body.rtl .enquiry-card-heading {
+    direction: rtl;
+}
+
+body.rtl .enquiry-field {
+    text-align: right;
+}
+
+body.rtl .enquiry-field input,
+body.rtl .enquiry-field select,
+body.rtl .enquiry-field textarea {
+    direction: rtl;
+    text-align: right;
+}
+
+body.rtl .enquiry-form-bottom {
+    direction: rtl;
+}
+
+body.rtl .enquiry-submit-btn {
+    direction: rtl;
+}
+
+body.rtl .enquiry-submit-btn:hover i {
+    transform: translateX(-4px);
+}

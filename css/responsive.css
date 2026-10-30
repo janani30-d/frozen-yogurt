@@ -37823,3 +37823,517 @@ html[dir="rtl"] #contactPhone::placeholder {
     text-align: center !important;
     align-self: center;
 }
+
+
+
+
+/* =========================================
+   MENU HERO – TABLET (768px)
+========================================= */
+
+@media (min-width: 768px) and (max-width: 833px) {
+
+    .menu-hero {
+        padding-top: 110px !important;
+        padding-bottom: 60px !important;
+    }
+
+    .menu-hero-container {
+        padding-top: 20px !important;
+    }
+
+    .menu-hero-content {
+        margin-top: 0 !important;
+    }
+
+}
+
+
+/* =========================================
+   MENU HERO – SMALL MOBILE (360px)
+========================================= */
+
+@media (max-width: 360px) {
+
+    .menu-hero {
+        padding-top: 95px !important;
+        padding-bottom: 45px !important;
+    }
+
+    .menu-hero-container {
+        padding-top: 15px !important;
+    }
+
+    .menu-hero-content {
+        margin-top: 0 !important;
+    }
+
+    .menu-hero-content h1 {
+        margin-top: 10px !important;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   ENQUIRY PAGE — RESPONSIVE CSS
+===================================================== */
+
+
+/* =====================================================
+   TABLET / IPAD PRO
+   1024px – 1100px
+===================================================== */
+
+@media (min-width: 834px) and (max-width: 1100px) {
+
+    .enquiry-topbar {
+        min-height: 82px;
+        padding: 14px 4%;
+    }
+
+    .enquiry-topbar-logo img {
+        width: 195px;
+        height: 58px;
+    }
+
+    .enquiry-section {
+        padding: 65px 35px 80px;
+    }
+
+    .enquiry-container {
+        max-width: 900px;
+    }
+
+    .enquiry-heading {
+        margin-bottom: 38px;
+    }
+
+    .enquiry-heading h1 {
+        font-size: 37px;
+    }
+
+    .enquiry-heading p {
+        font-size: 13px;
+        max-width: 620px;
+    }
+
+    .enquiry-card {
+        padding: 38px 35px;
+    }
+
+    .enquiry-form-grid {
+        gap: 22px 20px;
+    }
+
+}
+
+
+/* =====================================================
+   IPAD MINI / SMALL TABLET
+   768px – 833px
+===================================================== */
+
+@media (min-width: 768px) and (max-width: 833px) {
+
+    .enquiry-topbar {
+        min-height: 78px;
+        padding: 12px 4%;
+    }
+
+    .enquiry-topbar-logo img {
+        width: 180px;
+        height: 55px;
+    }
+
+    .enquiry-topbar-actions {
+        gap: 10px;
+    }
+
+    .enquiry-topbar-btn {
+        width: 43px;
+        height: 43px;
+        min-width: 43px;
+    }
+
+    .enquiry-section {
+        padding: 55px 28px 70px;
+    }
+
+    .enquiry-container {
+        max-width: 700px;
+    }
+
+    .enquiry-heading {
+        max-width: 620px;
+        margin-bottom: 32px;
+    }
+
+    .enquiry-heading h1 {
+        font-size: 34px;
+    }
+
+    .enquiry-heading p {
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    .enquiry-card {
+        padding: 32px 28px;
+        border-radius: 18px;
+    }
+
+    .enquiry-card-heading h2 {
+        font-size: 21px;
+    }
+
+    .enquiry-form-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 16px;
+    }
+
+    .enquiry-field input,
+    .enquiry-field select {
+        height: 49px;
+    }
+
+    .enquiry-field input,
+    .enquiry-field select,
+    .enquiry-field textarea {
+        font-size: 12px;
+        padding: 12px 13px;
+    }
+
+    .enquiry-form-bottom {
+        gap: 15px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+   481px – 767px
+===================================================== */
+
+@media (max-width: 767px) {
+
+    .enquiry-topbar {
+        min-height: 72px;
+        padding: 11px 5%;
+    }
+
+    .enquiry-topbar-logo img {
+        width: 155px;
+        height: 48px;
+    }
+
+    .enquiry-topbar-actions {
+        gap: 8px;
+    }
+
+    .enquiry-topbar-btn {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .enquiry-topbar-btn svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .enquiry-section {
+        padding: 48px 18px 65px;
+    }
+
+    .enquiry-container {
+        max-width: 550px;
+    }
+
+    .enquiry-heading {
+        margin-bottom: 30px;
+    }
+
+    .enquiry-eyebrow {
+        font-size: 11px;
+        margin-bottom: 11px;
+    }
+
+    .enquiry-heading h1 {
+        font-size: 31px;
+        line-height: 1.3;
+        margin-bottom: 13px;
+    }
+
+    .enquiry-heading p {
+        font-size: 12px;
+        line-height: 1.8;
+    }
+
+    .enquiry-card {
+        padding: 28px 24px;
+        border-radius: 17px;
+    }
+
+    .enquiry-card-heading {
+        gap: 13px;
+        margin-bottom: 25px;
+        padding-bottom: 20px;
+    }
+
+    .enquiry-card-icon {
+        width: 47px;
+        height: 47px;
+        min-width: 47px;
+        font-size: 18px;
+        border-radius: 12px;
+    }
+
+    .enquiry-card-heading h2 {
+        font-size: 19px;
+    }
+
+    .enquiry-card-heading p {
+        font-size: 11px;
+    }
+
+    .enquiry-form-grid {
+        grid-template-columns: 1fr;
+        gap: 19px;
+    }
+
+    .enquiry-field-full {
+        grid-column: auto;
+    }
+
+    .enquiry-field {
+        gap: 8px;
+    }
+
+    .enquiry-field label {
+        font-size: 12px;
+    }
+
+    .enquiry-field input,
+    .enquiry-field select {
+        height: 47px;
+    }
+
+    .enquiry-field input,
+    .enquiry-field select,
+    .enquiry-field textarea {
+        padding: 12px 14px;
+        font-size: 12px;
+        border-radius: 8px;
+    }
+
+    .enquiry-field textarea {
+        min-height: 125px;
+    }
+
+    .enquiry-form-bottom {
+        margin-top: 24px;
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+    }
+
+    .enquiry-form-bottom p {
+        font-size: 11px;
+    }
+
+    .enquiry-submit-btn {
+        width: 100%;
+        min-height: 47px;
+        font-size: 12px;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+   361px – 480px
+===================================================== */
+
+@media (max-width: 480px) {
+
+    .enquiry-topbar {
+        padding: 10px 4%;
+    }
+
+    .enquiry-topbar-logo img {
+        width: 140px;
+        height: 44px;
+    }
+
+    .enquiry-topbar-actions {
+        gap: 7px;
+    }
+
+    .enquiry-topbar-btn {
+        width: 37px;
+        height: 37px;
+        min-width: 37px;
+    }
+
+    .enquiry-topbar-btn svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .enquiry-section {
+        padding: 40px 14px 55px;
+    }
+
+    .enquiry-heading h1 {
+        font-size: 27px;
+    }
+
+    .enquiry-heading p {
+        font-size: 11px;
+    }
+
+    .enquiry-card {
+        padding: 24px 18px;
+    }
+
+    .enquiry-card-heading {
+        align-items: flex-start;
+    }
+
+    .enquiry-card-heading h2 {
+        font-size: 18px;
+    }
+
+    .enquiry-card-heading p {
+        font-size: 10px;
+    }
+
+}
+
+
+/* =====================================================
+   EXTRA SMALL MOBILE
+   360px AND BELOW
+===================================================== */
+
+@media (max-width: 360px) {
+
+    .enquiry-topbar {
+        min-height: 65px;
+        padding: 9px 12px;
+    }
+
+    .enquiry-topbar-logo img {
+        width: 120px;
+        height: 40px;
+    }
+
+    .enquiry-topbar-actions {
+        gap: 6px;
+    }
+
+    .enquiry-topbar-btn {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+    }
+
+    .enquiry-topbar-btn svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .enquiry-section {
+        padding: 35px 12px 45px;
+    }
+
+    .enquiry-heading h1 {
+        font-size: 24px;
+    }
+
+    .enquiry-card {
+        padding: 21px 15px;
+    }
+
+    .enquiry-card-icon {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+
+    .enquiry-card-heading h2 {
+        font-size: 16px;
+    }
+
+    .enquiry-field input,
+    .enquiry-field select,
+    .enquiry-field textarea {
+        font-size: 11px;
+    }
+
+}
+
+
+/* =====================================================
+   RTL RESPONSIVE
+===================================================== */
+
+@media (max-width: 767px) {
+
+    body.rtl .enquiry-topbar {
+        flex-direction: row;
+    }
+
+    body.rtl .enquiry-card-heading {
+        flex-direction: row;
+        text-align: right;
+    }
+
+    body.rtl .enquiry-field {
+        text-align: right;
+    }
+
+    body.rtl .enquiry-field input,
+    body.rtl .enquiry-field select,
+    body.rtl .enquiry-field textarea {
+        text-align: right;
+        direction: rtl;
+    }
+
+    body.rtl .enquiry-form-bottom {
+        align-items: stretch;
+    }
+
+    body.rtl .enquiry-form-bottom p {
+        justify-content: flex-start;
+    }
+
+}
+/* ENQUIRY PHONE FIELD — RTL */
+
+html[dir="rtl"] #enquiryPhone,
+body.rtl #enquiryPhone {
+    direction: rtl !important;
+    text-align: right !important;
+    text-align-last: right !important;
+    padding-right: 16px !important;
+    padding-left: 16px !important;
+}
+
+html[dir="rtl"] #enquiryPhone::placeholder,
+body.rtl #enquiryPhone::placeholder {
+    direction: rtl !important;
+    text-align: right !important;
+    opacity: 1;
+}
