@@ -1902,3 +1902,177 @@ document.addEventListener("DOMContentLoaded", function () {
     updateGallery(0);
 
 });
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const track = document.getElementById("home2SweetGalleryTrack");
+    const dotsContainer = document.getElementById("home2SweetGalleryDots");
+    const prevBtn = document.getElementById("home2SweetGalleryPrev");
+    const nextBtn = document.getElementById("home2SweetGalleryNext");
+
+    if (!track || !dotsContainer) return;
+
+    const originalItems = Array.from(
+        track.querySelectorAll(".home2-sweet-gallery-item")
+    ).filter(item => !item.classList.contains("gallery-clone"));
+
+    const dots = Array.from(
+        dotsContainer.querySelectorAll(".home2-sweet-gallery-dot")
+    );
+
+    if (!originalItems.length || !dots.length) return;
+
+    const itemsPerSlide = 3;
+    const totalSlides = dots.length;
+
+    let currentSlide = 0;
+    let isAnimating = false;
+
+    // Remove old clones before initializing
+    track.querySelectorAll(".gallery-clone").forEach(clone => {
+        clone.remove();
+    });
+
+    // Clone first 3 images at the end
+    originalItems.slice(0, itemsPerSlide).forEach(item => {
+
+        const clone = item.cloneNode(true);
+
+        clone.classList.add("gallery-clone");
+        clone.setAttribute("aria-hidden", "true");
+
+        track.appendChild(clone);
+
+    });
+
+    function getMoveDistance(index) {
+
+        const firstItem = track.querySelector(
+            ".home2-sweet-gallery-item"
+        );
+
+        const itemWidth = firstItem.getBoundingClientRect().width;
+        const gap = parseFloat(getComputedStyle(track).gap) || 0;
+
+        return index * itemsPerSlide * (itemWidth + gap);
+    }
+
+    function updateDots() {
+
+        dots.forEach((dot, index) => {
+            dot.classList.toggle("active", index === currentSlide);
+        });
+
+    }
+
+    function moveGallery(index, animate = true) {
+
+        const distance = getMoveDistance(index);
+
+        track.style.transition = animate
+            ? "transform 0.55s ease"
+            : "none";
+
+        track.style.transform =
+            `translate3d(-${distance}px, 0, 0)`;
+
+        updateDots();
+
+    }
+
+    function nextSlide() {
+
+        if (isAnimating) return;
+
+        isAnimating = true;
+        currentSlide++;
+
+        moveGallery(currentSlide, true);
+
+    }
+
+    function previousSlide() {
+
+        if (isAnimating) return;
+
+        isAnimating = true;
+
+        if (currentSlide === 0) {
+
+            // Jump to the cloned final position without animation
+            currentSlide = totalSlides;
+
+            moveGallery(currentSlide, false);
+
+            // Force browser to apply the reset position
+            track.offsetHeight;
+
+            currentSlide = totalSlides - 1;
+
+        } else {
+
+            currentSlide--;
+
+        }
+
+        moveGallery(currentSlide, true);
+
+    }
+
+    // Dot navigation
+    dots.forEach((dot, index) => {
+
+        dot.addEventListener("click", function () {
+
+            if (isAnimating) return;
+
+            currentSlide = index;
+            moveGallery(currentSlide, true);
+
+        });
+
+    });
+
+    // Arrow navigation
+    if (nextBtn) {
+        nextBtn.addEventListener("click", nextSlide);
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener("click", previousSlide);
+    }
+
+    // Infinite loop after final slide
+    track.addEventListener("transitionend", function (event) {
+
+        if (event.target !== track || event.propertyName !== "transform") {
+            return;
+        }
+
+        if (currentSlide >= totalSlides) {
+
+            currentSlide = 0;
+            moveGallery(0, false);
+
+        }
+
+        isAnimating = false;
+        updateDots();
+
+    });
+
+    // Responsive position correction
+    window.addEventListener("resize", function () {
+        moveGallery(currentSlide, false);
+    });
+
+    moveGallery(0, false);
+
+});

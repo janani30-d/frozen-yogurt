@@ -38337,3 +38337,116 @@ body.rtl #enquiryPhone::placeholder {
     text-align: right !important;
     opacity: 1;
 }
+
+
+
+
+
+/* =========================================
+   ENQUIRY FORM — RTL PADDING FIX
+========================================= */
+
+body.rtl .enquiry-form-grid,
+html[dir="rtl"] .enquiry-form-grid {
+    direction: rtl;
+}
+
+/* Labels */
+body.rtl .enquiry-field label,
+html[dir="rtl"] .enquiry-field label {
+    text-align: right !important;
+}
+
+/* Text, email, phone and subject inputs */
+body.rtl .enquiry-field input,
+html[dir="rtl"] .enquiry-field input {
+    direction: rtl !important;
+    text-align: right !important;
+    padding: 14px 16px !important;
+}
+
+/* Input placeholders */
+body.rtl .enquiry-field input::placeholder,
+html[dir="rtl"] .enquiry-field input::placeholder {
+    text-align: right !important;
+    direction: rtl !important;
+}
+
+/* Select dropdown */
+body.rtl .enquiry-field select,
+html[dir="rtl"] .enquiry-field select {
+    direction: rtl !important;
+    text-align: right !important;
+    text-align-last: right !important;
+    padding: 14px 16px 14px 42px !important;
+}
+
+/* Dropdown options */
+body.rtl .enquiry-field select option {
+    direction: rtl;
+    text-align: right;
+}
+
+/* Message textarea */
+body.rtl .enquiry-field textarea,
+html[dir="rtl"] .enquiry-field textarea {
+    direction: rtl !important;
+    text-align: right !important;
+    padding: 14px 16px !important;
+}
+
+/* Textarea placeholder */
+body.rtl .enquiry-field textarea::placeholder,
+html[dir="rtl"] .enquiry-field textarea::placeholder {
+    text-align: right !important;
+}
+
+/* Full-width fields */
+body.rtl .enquiry-field-full,
+html[dir="rtl"] .enquiry-field-full {
+    text-align: right !important;
+}
+/* =========================================
+   ENQUIRY TYPE — RTL ONLY
+========================================= */
+
+body.rtl #enquiryType,
+html[dir="rtl"] #enquiryType {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    direction: rtl !important;
+    text-align: right !important;
+    text-align-last: right !important;
+    padding: 12px 16px 12px 42px !important;
+    margin: 0 !important;
+    transform: none !important;
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+}
+
+body.rtl #enquiryType option,
+html[dir="rtl"] #enquiryType option {
+    direction: rtl !important;
+    text-align: right !important;
+}
+/* ENQUIRY TYPE — RTL ARROW POSITION */
+
+body.rtl #enquiryType,
+html[dir="rtl"] #enquiryType {
+    direction: rtl !important;
+    text-align: right !important;
+    text-align-last: right !important;
+    padding-right: 16px !important;
+    padding-left: 42px !important;
+
+    background-position: left 16px center !important;
+}
+/* ENQUIRY TYPE — RTL ARROW GAP */
+
+body.rtl #enquiryType,
+html[dir="rtl"] #enquiryType {
+    padding-right: 35px !important;
+    padding-left: 16px !important;
+    background-position: right 16px center !important;
+}
